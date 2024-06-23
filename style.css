@@ -17,11 +17,13 @@ body {
     border-radius: 50%;
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 .navbar .logo h2 {
     padding-left: 10px;
     color: white;
+    cursor: pointer;
 }
 
 .navbar {
@@ -68,7 +70,11 @@ body {
 .signin {
     width: 100%;
     height: 100%;
-    background-color: antiquewhite;
+    
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10) saturate(180);
+    --webkit-backdrop-filter: blur(10) saturate(180);
+
     position: absolute;
     top: 0;
     left: 0;
@@ -81,7 +87,11 @@ body {
 .signup {
     width: 100%;
     height: 100%;
-    background-color: rgb(135, 80, 8);
+    
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10) saturate(180);
+    --webkit-backdrop-filter: blur(10) saturate(180);
+
     position: absolute;
     top: 0;
     left: 0;
@@ -117,10 +127,19 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
+    margin: 3px;
 }
 
 .navbar ul li {
-    padding: 20px;
+    padding: 10px;
+}
+
+.navbar ul li:hover {
+    border-radius: 5px;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10) saturate(180);
+    --webkit-backdrop-filter: blur(10) saturate(180);
 }
 
 .navbar ul li a {
@@ -148,6 +167,7 @@ body {
 .navbar .icon {
     color: white;
     font-size: 2.4rem;
+    cursor: pointer;
 }
 
 .btn:hover {
